@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+body{
+    background: url('./image/background.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+.container {
+    width: 300px;
+    margin: 150px 1000px;
+    text-align: center;
+}
+.container input {
+    width: 150%;
+    margin-bottom: 25px;
+    background: #444759;
+    padding: 10px;
+}
+/* Customize the label (the container) */
+.text {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    text-align: left;
+    color: #fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .text input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .text:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .text input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .text input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .text .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+/*.radioinput{
+    width: 10px;
+    height: 10px;
+}
+.radiolabel {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}*/
+/*.button {
+    padding: 5px 25px;
+    background-color: #444759;
+    text-align: center;
+    font-size: x-small;
+    color: white;
+    border: none;
+    margin-bottom: 5px;
+    cursor: pointer;
+}*/
+.btn-group button {
+    background-color: #444759; 
+    border: 1px solid #444759;
+    color: white; /* White text */
+    padding: 5px 10px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #3e8e41;
+  }
+.header {
+    width: 100%;
+    padding: 20px;
+    background: #444759;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar{
+    position: fixed;
+  }
+.logo{
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+
+  }
+  .navbar .choice{
+    padding-left: 600px;
+  }
+  .navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 30px;
+  }
+  .navbar ul li a{
+    font-size: 18px;
+    padding: 22px 0;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    transition: all ease 0.3%;
+  }
+  .navbar ul li a:hover{
+    color: red;
+  }
+  /*dropdown*/
+  .navbar ul .dropdown {
+    position: absolute;
+    background-color: #444759;
+    width: 350px;
+    box-shadow: 0 20px 45px #00000020;
+    margin-top: -50px;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.5s;
+
+}
+ .navbar ul li:hover .dropdown{
+  z-index:99px;
+  opacity: 1;
+  margin-top: 0;
+}
+.navbar ul li .dropdown ul{
+    margin: 0;
+    width: 100;
+}
+.navbar ul li .dropdown li a{
+  padding-right: 100px;
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}

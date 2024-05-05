@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+body{
+    background: url('./image/background.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+.container {
+  /* width: 300px;
+  margin: 100px 1000px;
+  text-align: center; */
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.big-title{
+  font-size: 4em;
+  text-align: center;
+  color: #fff;
+}
+/* .container h2{
+    color: white;
+  }
+.container a{
+  color: white;
+}
+.container h3{
+    color: white;
+  } */
+/* pre {
+    color: white;
+    /* font-size: 15px;
+    margin: 0; 
+    margin-bottom: 20px;
+} */
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+p {
+  text-align: center;
+  font-size: 3em;
+  color: white;
+  margin-bottom: 20px;
+}
+
+pre {
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 2em; /* Set font size to match the big title */
+  display: block; /* Make the anchor element a block-level element */
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.header {
+    width: 100%;
+    padding: 20px;
+    background: #444759;
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo{
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+
+  }
+  .navbar .choice{
+    /* padding-left: 400px; */
+    list-style-type: none; /* Remove default list styles */
+    margin: 0;
+    padding: 0;
+  }
+  .navbar ul li{
+    float: left;
+    /* list-style: none; */
+    margin: 0 30px;
+  }
+  .navbar ul li a{
+    display: block;
+    font-size: 18px;
+    padding: 22px 0;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    /* margin-left: 40px;
+    transition: all ease 0.3%; */
+  }
+  .navbar ul li a:hover{
+    color: red;
+  }
+  /*dropdown*/
+  .navbar ul .dropdown {
+    position: absolute;
+    background-color: #444759;
+    width: auto;
+    box-shadow: 0 20px 45px #00000020;
+    /* margin-top: -50px;
+    opacity: 0;
+    z-index: -999;*/
+    transition: all ease 0.5s;
+    opacity: 0;
+    min-width: 160px;
+    z-index: 1;
+
+}
+ .navbar ul li:hover .dropdown{
+  /* z-index:99px;
+  margin-top: 0; */
+  opacity: 1;
+  display: block;
+}
+.navbar ul li .dropdown ul{
+    margin: 0;
+    width: 100;
+}
+.navbar ul li .dropdown li a{
+  padding-right: 100px;
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
